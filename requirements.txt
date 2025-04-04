@@ -2,5 +2,6 @@ fastapi==0.104.1
 uvicorn==0.24.0
 python-dotenv==1.0.0
 sqlalchemy==2.0.23
-mysqlclient==2.2.0
+PyMySQL==1.1.0  # Reemplazar mysqlclient por PyMySQL
 pydantic==2.5.2
+cryptography  # Necesario para PyMySQL

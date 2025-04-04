@@ -16,7 +16,7 @@ DB_PORT = os.getenv("MYSQL_PORT")
 DB_NAME = os.getenv("MYSQL_DATABASE")
 
 # Crear URL de conexión
-DATABASE_URL = f"mysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+DATABASE_URL = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
 # Crear motor de base de datos
 engine = create_engine(DATABASE_URL)
